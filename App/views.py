@@ -4,6 +4,6 @@ blue = Blueprint('blueHello', __name__)
 
 @blue.route('/')
 def hello():
-    return render_template('hello.html')
+    return render_template('index.html')
 
 
