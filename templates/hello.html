@@ -1,17 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>helloworld</title>
-</head>
-<body>
+
+
+{% block content %}
 <a href = "{{ url_for('blueIndex.index') }}">index</a>
+<br>
 <a href = "{{ url_for('blueOneStepService.index') }}">OneStepService</a>
+<br>
 <a href = "{{ url_for('blueOneStepTrade.index') }}">OneStepTrade</a>
+<br>
 <a href = "{{ url_for('blueRESource.index') }}">RESource</a>
+<br>
 <a href = "{{ url_for('blueOurTeam.index') }}">OurTeam</a>
+<br>
 <a href = "{{ url_for('blueContactUs.index') }}">ContactUs</a>
-
-
-</body>
-</html>
+<br>
+<a href = "{{ url_for('bluePersonalLoan.index') }}">personalLoan</a>
+    {% block app_content %}
+        {% endblock %}
+{% endblock %}

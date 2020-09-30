@@ -6,4 +6,5 @@ blue = Blueprint('blueRESource', __name__)
 
 @blue.route('/re_source')
 def index():
-    return render_template( 'RESource.html' )
+    title = '精选房源'
+    return render_template( 'RESource.html', title=title )

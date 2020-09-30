@@ -1,0 +1,41 @@
+<!-- 页脚footer-->
+<footer id="about">
+    <div class="about-con">
+        <div class="part part1">
+            <div class="title">关于我们</div>
+            <pre style="">
+<span class="height-light">Home Capital INC是美国房地产投资股份有限公司 多年致力于北美房地产投资 投资内容包括开发 翻新 租赁 私人贷款等。向客户提供非中介的折扣型投资房源。为客户带来稳定回报率的同时，也辅助客户进行合理的资产配置。 线上线下同时展示北美房产投资咨询。一站式购房及管理服务</span>
+    </pre>
+        </div>
+        <div class="part part2">
+            <div class="title">网站导航</div>
+            <ul>
+                <li class="{% if request.endpoint == 'blueRESource.index' %}active{% endif %}">
+                    <a href="{{ url_for('blueRESource.index') }}">精选房源 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="{% if request.endpoint == 'blueOneStepService.index' %}active{% endif %}">
+                    <a href="{{ url_for('blueOneStepService.index') }}">一站式房屋服务</a>
+                </li>
+                <li class="{% if request.endpoint == 'blueOneStepTrade.index' %}active{% endif %}">
+                    <a href="{{ url_for('blueOneStepTrade.index') }}">一站式房屋买卖</a>
+                </li>
+                <li class="{% if request.endpoint == 'bluePersonalLoan.index' %}active{% endif %}">
+                    <a href="{{ url_for('bluePersonalLoan.index') }}">房屋私人贷款</a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="part part3">
+            <div class="title">联系我们</div>
+            <div>
+                纳什维尔
+            </div>
+            <ul>
+
+            </ul>
+        </div>
+        <hr>
+    </div>
+</footer>
+<!-- end 页脚footer-->

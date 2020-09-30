@@ -6,4 +6,5 @@ blue = Blueprint('blueContactUs', __name__)
 
 @blue.route('/contactus')
 def index():
-    return render_template( 'ContactUs.html' )
+    title = '联系我们'
+    return render_template( 'ContactUs.html', title=title)

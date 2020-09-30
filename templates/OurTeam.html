@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-this is Ourteeam Page
+{% extends "commons/base.html" %}
+{% block title %}
+{% if title %}
+    {{ title }} | Home Capital Inc
+{% else %}
+    Home Capital Inc
+{% endif %}
+{% endblock %}
 
-</body>
-</html>
+{% block extracss %}{% endblock %}

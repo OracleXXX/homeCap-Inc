@@ -1,0 +1,87 @@
+{% extends "bootstrap/base.html" %}
+{#设置title#}
+{% block title %}
+{% if title %}
+    {{ title }} | Home Capital Inc
+{% else %}
+    Home Capital Inc
+{% endif %}
+{% endblock %}
+
+{#css#}
+{% block styles %}
+{{super()}}
+<link rel="stylesheet"
+      href="/static/css/footer.css">
+{% endblock %}
+
+{#导航栏#}
+{% block navbar %}
+    {% include 'commons/navbar.html' %}
+{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="jumbotron">
+            {% if title == '主页' %}
+                <h1>Home Capital inc</h1>
+            {% else %}
+                <h1>{{ title }}</h1>
+            {% endif %}
+
+            <p>...</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="jumbotron">
+            {% if title == '主页' %}
+                <h1>Home Capital inc</h1>
+            {% else %}
+                <h1>{{ title }}</h1>
+            {% endif %}
+
+            <p>...</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="jumbotron">
+            {% if title == '主页' %}
+                <h1>Home Capital inc</h1>
+            {% else %}
+                <h1>{{ title }}</h1>
+            {% endif %}
+
+            <p>...</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="jumbotron">
+            {% if title == '主页' %}
+                <h1>Home Capital inc</h1>
+            {% else %}
+                <h1>{{ title }}</h1>
+            {% endif %}
+
+            <p>...</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+        </div>
+    </div>
+
+
+
+
+
+    {% block app_content %}
+    {% endblock %}
+
+    {% block footer_content %}
+    {% include "commons/footer.html" %}
+    {% endblock %}
+
+
+{% endblock %}
+
+
+
