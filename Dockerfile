@@ -1,9 +1,12 @@
 FROM python:3.7
-WORKDIR /Project/homecap
+
+FROM python:2
+
+WORKDIR /usr/src/app
 
 COPY requirements.txt ./
-RUN pip install -r requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD["gunicorn", "start:app", "-c", "./gunicorn.conf.py"]
+CMD ["gunicorn", "manage:app", "-c", "./gunicorn.conf.py"]
