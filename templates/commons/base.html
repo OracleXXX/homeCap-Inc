@@ -20,7 +20,20 @@
     {% include 'commons/navbar.html' %}
 {% endblock %}
 {% block content %}
+
     <div class="container" style="margin-top: 100px">
+        <div class="jumbotron">
+            {% if title == '主页' %}
+                <h1>这是一个滚动图 宽度占满整个屏幕</h1>
+            {% else %}
+                <h1>{{ title }}</h1>
+            {% endif %}
+
+            <p>常见问题 省略版</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+        </div>
+    </div>
+    <div class="container" >
         <div class="jumbotron">
             {% if title == '主页' %}
                 <h1>Home Capital inc</h1>
@@ -30,18 +43,6 @@
             {% endif %}
 
             <p>...</p>
-            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-        </div>
-    </div>
-    <div class="container">
-        <div class="jumbotron">
-            {% if title == '主页' %}
-                <h1>这是一个滚动图 宽度占满整个屏幕</h1>
-            {% else %}
-                <h1>{{ title }}</h1>
-            {% endif %}
-
-            <p>常见问题 省略版</p>
             <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
         </div>
     </div>
